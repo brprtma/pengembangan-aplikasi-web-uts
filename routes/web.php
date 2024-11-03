@@ -39,3 +39,4 @@ Route::middleware('auth')->group(function () {
     Route::put('/parking/{parking}/keluar', [ParkingController::class, 'out'])->name('parking.out');
 });
 
+//ini adalah komentar
