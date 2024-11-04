@@ -27,7 +27,7 @@
                 <td>
                     @if($park->status != 'keluar')
                         @if($park->status != 'parking')
-                            @can('masuk', $user)
+                            @can('ruang', $user)
                                 <a href="{{ route('parking.edit', $park->id) }}" class="btn btn-success">Parkir</a>
                             @endcan
                         @endif
